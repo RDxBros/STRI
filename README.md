@@ -1,0 +1,1 @@
+STRI (Stop Tapir Roadkill Initiative) is a platform I developed using HTML, CSS, and Js to raise awareness for and promote practical solutions to prevent the roadkill of endangered Malayan Tapirs in Malaysia. This project earned my team 4th place at the HACKVCIS international hackathon. Check out the website at https://stri-my.netlify.app/
