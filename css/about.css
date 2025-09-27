@@ -1,0 +1,584 @@
+/* Google Font Links. */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+/* CSS Reset and Essentials. */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.full-content {
+  cursor: url('Pink.cur'), auto;
+}
+
+/* Custom Scollbar */
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(red, blue);
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+/* Back To Top Button */
+
+#topBtn {
+  transform: scale(1.2);
+  border-radius: 10px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+  z-index: 100000000;
+}
+
+/* Navbar. */
+
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5s ease;
+}
+
+header .navigation .navigation-items a {
+  position: relative;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before {
+  width: 100%;
+}
+
+.brand {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#paw {
+  margin-left: 10px;
+}
+
+#about {
+  margin-left: 10px;
+}
+
+.services {
+  padding: 80px 0;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/* Similar Styles */
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Poppins';
+}
+
+section .title::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+/* Home + BG Image Styling */
+
+.home {
+  display: flex;
+  background: url('../images/Malayan\ Tapir\ 3.jpg') no-repeat center;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+  width: 100%;
+  display: flex;
+}
+
+.home .max-width .row {
+  margin-right: 0;
+}
+
+.home .home-content {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  transition: 0.3s ease;
+  transform: scale(1.17);
+}
+
+.home .home-content:hover {
+  border-top: 10px solid white;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.home .home-content .text-1 {
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .home-content .text-25 {
+  text-align: center;
+  padding: 25px;
+  font-size: 45px;
+  max-width: 800px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+  font-size: 65px;
+  color: #32cd32;
+}
+
+.home .home-content .text-3 span {
+  font-weight: 600;
+}
+
+.home .home-content a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+  color: crimson;
+  background: none;
+}
+
+/* Goals Section */
+
+.services,
+.teams {
+  color: #fff;
+  background: #111;
+}
+
+.services .title::before,
+.teams .title::before {
+  background: #fff;
+}
+
+.services .title::after,
+.teams .title::after {
+  background: #111;
+}
+
+.services .serv-content .card {
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+  background: crimson;
+}
+
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+  color: #fff;
+}
+
+.services .serv-content .card .text {
+  font-weight: 600;
+  font-size: 35px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.services .serv-content .card p {
+  line-height: 2;
+}
+
+/* Animated Footer */
+
+footer {
+  margin-top: 110px;
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+}
+
+.media-icons {
+  left: 840px;
+  z-index: 888;
+  position: absolute;
+  display: flex;
+  transition: 0.5s ease;
+}
+
+.media-icons a {
+  color: white;
+  font-size: 2.6em;
+  transition: 0.3s ease;
+  margin-left: 20px;
+}
+
+.media-icons a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.media-icons a:hover {
+  transform: scale(1.3);
+}
+
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../images/Wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 767px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+
+  .menu-btn i.active:before {
+    content: '\f00d';
+  }
+
+  .navbar {
+    transform: scale(0.85);
+    display: inline-block;
+  }
+
+  .logo {
+    margin-left: -210px;
+  }
+
+  .navigation {
+    margin-top: -38px;
+    margin-left: -20px;
+    position: absolute;
+  }
+
+  .navbar .menu {
+    position: fixed;
+    background: #111;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .home .home-content {
+    transform: scale(0.86);
+    align-items: center;
+    margin-left: -15px;
+  }
+
+  body .uwy.userway_p1 .uai {
+    margin-right: 5px;
+  }
+
+  #topBtn {
+    left: 270px;
+    bottom: 30px;
+  }
+
+  .media-icons {
+    margin-left: -420px;
+    margin-bottom: -5px;
+  }
+
+  .about .about-content .column {
+    width: 100%;
+  }
+  
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  .about .about-content .right {
+    flex: 100%;
+  }
+
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+
+  .skills .skills-content .column,
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 32px;
+  }
+
+  .home .home-content a {
+    font-size: 20px;
+  }
+
+  .services .serv-content .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .home .home-content .text-2 {
+    font-size: 50px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 27px;
+  }
+
+  .about .about-content .right .text,
+  .skills .skills-content .left .text {
+    font-size: 19px;
+  }
+
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+
+  .right form .error-box {
+    width: 150px;
+  }
+
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+  }
+}
+
+@media (min-width: 768px) {
+  body .uwy.userway_p1 .uai {
+    margin-right: 25px;
+  }
+
+  .media-icons {
+    margin-left: -155px;
+    text-align: center;
+    margin-bottom: -5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  .about .about-content,
+  .services .serv-content,
+  .skills .skills-content,
+  .contact .contact-content {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .services .serv-content .card {
+    width: 450px;
+    margin: 35px;
+    padding: 35px;
+    text-align: center;
+    transform: scale(1.1);
+    margin-left: 80px;
+  }
+}
